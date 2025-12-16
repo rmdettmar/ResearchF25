@@ -1,0 +1,24 @@
+scenario: AllZeroInputs
+description: Set inputs a, b, and c to 0 (000) to verify the output is 0, as defined in the Karnaugh map.
+
+scenario: AllOneInputs
+description: Set inputs a, b, and c to 1 (111) to verify the output is 1, as defined in the Karnaugh map.
+
+scenario: SingleOneInputAtA
+description: Set inputs a = 1, b = 0, c = 0 (100) to verify the output is 1, testing the transition from a low to high state.
+
+scenario: SingleOneInputAtB
+description: Set inputs a = 0, b = 1, c = 0 (010) to verify the output is 1, ensuring functionality when only b is high.
+
+scenario: SingleOneInputAtC
+description: Set inputs a = 0, b = 0, c = 1 (001) to confirm the output is 1, testing the case where only c is high.
+
+scenario: ABEqualHigh
+description: Set inputs a = 1, b = 1, c = 0 (110) to verify that the output is 1 when both a and b are high.
+
+scenario: BCEqualHigh
+description: Set inputs a = 0, b = 1, c = 1 (011) to ensure the output is 1 when b and c are high.
+
+scenario: AlternatingBitPattern
+description: Set inputs a = 1, b = 0, c = 1 (101) to check the output is 1, verifying the function with alternating bits.
+

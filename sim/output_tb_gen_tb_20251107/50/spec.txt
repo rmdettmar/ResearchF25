@@ -1,0 +1,19 @@
+I would like you to implement a module named TopModule with the following interface. All input and output ports are one bit unless otherwise specified.
+
+- input  a
+- input  b
+- input  c
+- output out
+
+The module should implement the circuit described by the Karnaugh map below.
+
+kmap_entries = [
+    {'a': '0', 'bc': '00', 'value': '0'},
+    {'a': '1', 'bc': '00', 'value': '1'},
+    {'a': '0', 'bc': '01', 'value': '1'},
+    {'a': '1', 'bc': '01', 'value': '1'},
+    {'a': '0', 'bc': '11', 'value': '1'},
+    {'a': '1', 'bc': '11', 'value': '1'},
+    {'a': '0', 'bc': '10', 'value': '1'},
+    {'a': '1', 'bc': '10', 'value': '1'},
+]

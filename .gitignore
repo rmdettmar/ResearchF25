@@ -1,0 +1,6 @@
+sim/obj-dir
+sim/logs
+*/.DS_Store
+
+src/__pycache__
+verilog-e

@@ -1,0 +1,28 @@
+verilator -cc --exe -x-assign fast -Wall --assert --coverage-line -Wno-WIDTHEXPAND -Wno-BLKSEQ -Wno-VARHIDDEN -Wno-WIDTHTRUNC -Wno-UNUSEDSIGNAL -Wno-SELRANGE -Wno-ASCRANGE -f input.vc top_module.v sim-main.cpp rfuzz-harness.cpp
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev v5.040-50-g0a9d9db5a
+- Verilator: Built from 0.000 MB sources in 0 modules, into 0.000 MB in 0 C++ files needing 0.000 MB
+- Verilator: Walltime 0.001 s (elab=0.000, cvt=0.000, bld=0.000); cpu 0.001 s on 1 threads; alloced 19.273 MB
+cd obj_dir && make -f Vtop_module.mk
+make[1]: Entering directory '/home/rdettmar/gradreasearch/Pro-V/sim/obj_dir'
+make[1]: Nothing to be done for 'default'.
+make[1]: Leaving directory '/home/rdettmar/gradreasearch/Pro-V/sim/obj_dir'
+obj_dir/Vtop_module
+===Scenario: ByteBoundaryTest0=====
+input_vars:
+top->in = 0x00000001000000100000001100000100
+4020301
+Mismatch at out: expected 0x4030201
+===Scenario: SequentialBytesIncreasing0=====
+input_vars:
+top->in = 0x00000001000000100000001100000100
+4020301
+Mismatch at out: expected 0x4030201
+===Scenario: SequentialBytesDecreasing0=====
+input_vars:
+top->in = 0x00000100000000110000001000000001
+1030204
+Mismatch at out: expected 0x1020304
+Found 3 mismatches.
+sim finished
+Unpass: 3
+make: *** [Makefile:49: run] Error 3

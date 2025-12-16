@@ -1,0 +1,5 @@
+{
+    "task_number": 50,
+    "description": "I would like you to implement a module named TopModule with the following interface. All input and output ports are one bit unless otherwise specified.\n\n- input  a\n- input  b\n- input  c\n- output out\n\nThe module should implement the circuit described by the Karnaugh map below.\n\n          a\n   bc   0   1\n   00 | 0 | 1 |\n   01 | 1 | 1 |\n   11 | 1 | 1 |\n   10 | 1 | 1 |",
+    "header": "module RefModule (input a, input b, input c, output out);"
+}

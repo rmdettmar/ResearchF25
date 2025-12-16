@@ -1,0 +1,66 @@
+[
+    {
+        "scenario": "AllZerosInput",
+        "input variable": [
+            {
+                "in": "00000000000000000000000000000000"
+            }
+        ]
+    },
+    {
+        "scenario": "AllOnesInput",
+        "input variable": [
+            {
+                "in": "11111111111111111111111111111111"
+            }
+        ]
+    },
+    {
+        "scenario": "AlternatingBitsPattern",
+        "input variable": [
+            {
+                "in": "10101010101010101010101010101010"
+            }
+        ]
+    },
+    {
+        "scenario": "ByteBoundaryTest",
+        "input variable": [
+            {
+                "in": "00000001000000100000001100000100"
+            }
+        ]
+    },
+    {
+        "scenario": "SingleByteSet",
+        "input variable": [
+            {
+                "in": "00000000000000000000000011111111"
+            }
+        ]
+    },
+    {
+        "scenario": "SequentialBytesIncreasing",
+        "input variable": [
+            {
+                "in": "00000001000000100000001100000100"
+            }
+        ]
+    },
+    {
+        "scenario": "SequentialBytesDecreasing",
+        "input variable": [
+            {
+                "in": "00000100000000110000001000000001"
+            }
+        ]
+    },
+    {
+        "scenario": "RandomBits",
+        "input variable": [
+            {
+                "in": "10100101101001011010010110100101"
+            }
+        ]
+    }
+]

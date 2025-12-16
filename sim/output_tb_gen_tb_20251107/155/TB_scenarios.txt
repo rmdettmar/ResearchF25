@@ -1,0 +1,24 @@
+scenario: InitialResetAndWalkLeft
+description: Upon an initial reset signal, the Lemming should start walking left. Verify that after the reset, walk_left is 1 and walk_right, aaah, and digging are 0.
+
+scenario: WalkingLeftBumpLeft
+description: While walking left, apply a bump_left signal. The Lemming should switch to walking right. Verify that walk_right is 1 and walk_left, aaah, and digging are 0.
+
+scenario: WalkingRightBumpRight
+description: While walking right, apply a bump_right signal. The Lemming should switch to walking left. Verify that walk_left is 1 and walk_right, aaah, and digging are 0.
+
+scenario: WalkingLeftFallOnGroundDisappears
+description: While walking left, set ground to 0 to simulate falling. Verify that aaah is 1 and walk_left, walk_right, and digging are 0.
+
+scenario: FallingMoreThan20CyclesAndGroundReappears
+description: While the Lemming is falling for more than 20 cycles, simulate ground reappearing. Verify that all outputs are 0 indicating splatter, and they remain 0.
+
+scenario: WalkingLeftStartDigging
+description: While walking left on the ground, apply a dig signal. Verify that digging is 1 and walk_left, walk_right, and aaah are 0.
+
+scenario: DiggingAndGroundDisappears
+description: While digging, set ground to 0. Verify that aaah is 1 and walk_left, walk_right, and digging are 0 as the Lemming starts falling.
+
+scenario: SimultaneousBumpAndFall
+description: Apply bump signals on both sides and set ground to 0 simultaneously to test precedence rules. Verify that aaah is 1 and the other outputs are 0, showing falling takes precedence over bumps.
+

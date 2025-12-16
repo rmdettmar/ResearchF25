@@ -1,0 +1,24 @@
+scenario: AllZerosInput
+description: Input a 32-bit vector with all bits set to 0. This serves as a baseline test to confirm that the module correctly processes the simplest input with no data change expected after reversal.
+
+scenario: AllOnesInput
+description: Input a 32-bit vector with all bits set to 1. This tests the module's ability to handle maximum data density and ensures no bits are dropped or incorrectly handled during byte reversal.
+
+scenario: AlternatingBitsPattern
+description: Input a 32-bit vector with an alternating pattern of 1s and 0s (e.g., 101010...10). This tests the module's ability to handle bit patterns that change frequently, ensuring byte boundaries are respected.
+
+scenario: ByteBoundaryTest
+description: Input a vector where each byte has distinct values (e.g., 0x01020304). This scenario checks if each byte is independently reversed correctly, verifying the module's byte-level processing.
+
+scenario: SingleByteSet
+description: Input a vector with only one byte set to a non-zero value (e.g., 0x000000FF). This tests the module's handling of isolated high bits within a single byte.
+
+scenario: SequentialBytesIncreasing
+description: Input a vector with sequentially increasing byte values (e.g., 0x01020304). This verifies the preservation and correct reversal of sequence order across the byte boundaries.
+
+scenario: SequentialBytesDecreasing
+description: Input a vector with sequentially decreasing byte values (e.g., 0x04030201). This serves as a counter-test to the increasing sequence, ensuring the module correctly reverses the order back to the original sequence post-reversal.
+
+scenario: RandomBits
+description: Input a vector with a random bit pattern (e.g., 0xA5A5A5A5). This scenario is designed to confirm that arbitrary data patterns are handled correctly, with each byte being reversed irrespective of the bit pattern.
+

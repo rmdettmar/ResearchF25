@@ -1,0 +1,106 @@
+[
+  {
+    "scenario": "AllZerosInput0",
+    "input variable": [
+      {
+        "in": "00000000000000000000000000000000"
+      }
+    ],
+    "output variable": [
+      {
+        "out": "00000000000000000000000000000000"
+      }
+    ]
+  },
+  {
+    "scenario": "AllOnesInput0",
+    "input variable": [
+      {
+        "in": "11111111111111111111111111111111"
+      }
+    ],
+    "output variable": [
+      {
+        "out": "11111111111111111111111111111111"
+      }
+    ]
+  },
+  {
+    "scenario": "AlternatingBitsPattern0",
+    "input variable": [
+      {
+        "in": "10101010101010101010101010101010"
+      }
+    ],
+    "output variable": [
+      {
+        "out": "10101010101010101010101010101010"
+      }
+    ]
+  },
+  {
+    "scenario": "ByteBoundaryTest0",
+    "input variable": [
+      {
+        "in": "00000001000000100000001100000100"
+      }
+    ],
+    "output variable": [
+      {
+        "out": "00000100000000110000001000000001"
+      }
+    ]
+  },
+  {
+    "scenario": "SingleByteSet0",
+    "input variable": [
+      {
+        "in": "00000000000000000000000011111111"
+      }
+    ],
+    "output variable": [
+      {
+        "out": "11111111000000000000000000000000"
+      }
+    ]
+  },
+  {
+    "scenario": "SequentialBytesIncreasing0",
+    "input variable": [
+      {
+        "in": "00000001000000100000001100000100"
+      }
+    ],
+    "output variable": [
+      {
+        "out": "00000100000000110000001000000001"
+      }
+    ]
+  },
+  {
+    "scenario": "SequentialBytesDecreasing0",
+    "input variable": [
+      {
+        "in": "00000100000000110000001000000001"
+      }
+    ],
+    "output variable": [
+      {
+        "out": "00000001000000100000001100000100"
+      }
+    ]
+  },
+  {
+    "scenario": "RandomBits0",
+    "input variable": [
+      {
+        "in": "10100101101001011010010110100101"
+      }
+    ],
+    "output variable": [
+      {
+        "out": "10100101101001011010010110100101"
+      }
+    ]
+  }
+]
